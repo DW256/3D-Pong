@@ -621,7 +621,7 @@ GameObject:
   - component: {fileID: 112239038}
   m_Layer: 0
   m_Name: Paddle B
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1690,7 +1690,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 517140507}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1046590885}
+        m_TargetAssemblyTypeName: GameOverController, Assembly-CSharp
+        m_MethodName: replay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &517140507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2199,7 +2211,7 @@ GameObject:
   - component: {fileID: 642032494}
   m_Layer: 0
   m_Name: Paddle L
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2517,7 +2529,7 @@ GameObject:
   - component: {fileID: 725968842}
   m_Layer: 0
   m_Name: Paddle T
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2947,6 +2959,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1046590884}
+  - component: {fileID: 1046590885}
   m_Layer: 5
   m_Name: Game Over Panel
   m_TagString: Untagged
@@ -2974,6 +2987,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -460, y: -320}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1046590885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046590883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b25c53126bc28241879e4f06a20d1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 544292746}
+  winner: {fileID: 1514646893}
+  manager: {fileID: 1132171813}
 --- !u!1 &1132171811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2985,7 +3013,7 @@ GameObject:
   - component: {fileID: 1132171812}
   - component: {fileID: 1132171813}
   m_Layer: 5
-  m_Name: Score Manager
+  m_Name: Stat Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3024,6 +3052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 00000000000000000000000000000000
   kebobolan: 00000000000000000000000000000000
+  GameOver: {fileID: 1046590885}
 --- !u!1 &1202750787
 GameObject:
   m_ObjectHideFlags: 0
@@ -3330,7 +3359,7 @@ GameObject:
   - component: {fileID: 1277021774}
   m_Layer: 0
   m_Name: Paddle R
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3587,10 +3616,10 @@ RectTransform:
   m_Father: {fileID: 544292747}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 80}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: -164, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328581500
 MonoBehaviour:
@@ -3639,7 +3668,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.3
+  m_fontSize: 30.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3755,10 +3784,10 @@ RectTransform:
   m_Father: {fileID: 544292747}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: -164, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1514646893
 MonoBehaviour:
@@ -3807,7 +3836,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.5
+  m_fontSize: 25.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4219,7 +4248,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1973814860}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1046590885}
+        m_TargetAssemblyTypeName: GameOverController, Assembly-CSharp
+        m_MethodName: backToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1973814860
 MonoBehaviour:
   m_ObjectHideFlags: 0

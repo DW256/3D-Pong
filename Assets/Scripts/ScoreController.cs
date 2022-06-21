@@ -7,7 +7,7 @@ public class ScoreController : MonoBehaviour
 {
     public TextMeshProUGUI[] score;
 
-    public GameManager manager;
+    public StatsManager manager;
     // Start is called before the first frame update
     void Start()
     {

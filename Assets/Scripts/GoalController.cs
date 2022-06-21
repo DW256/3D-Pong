@@ -7,19 +7,13 @@ public class GoalController : MonoBehaviour
     public BallsManager ballsManager;
     public GameObject paddle;
     private Paddle owner;
-    public GameManager manager;
+    public StatsManager manager;
 
     public int maxKebobolan;
     // Start is called before the first frame update
     void Start()
     {
         owner = paddle.GetComponent<PaddleController>().paddleName;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -32,8 +26,10 @@ public class GoalController : MonoBehaviour
             ballsManager.RemoveBall(collision.gameObject);
             if (manager.kebobolan[(int)owner]>=maxKebobolan) {
                 gameObject.GetComponent<Collider>().isTrigger = false;
+                paddle.tag = "Untagged";
+                manager.checkPlayers();
                 paddle.SetActive(false);
-                manager.popPaddle(owner);
+                
             }
         }
     }
