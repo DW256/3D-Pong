@@ -21,17 +21,17 @@ public class GameOverController : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    public void openMenu() 
+    public void openMenu()
     {
         pause();
         menu.SetActive(true);
-        winner.text = manager.getWinner()+ " WIN";
+        winner.text = manager.getWinner() + " WIN";
     }
 
     public void backToMainMenu()
     {
         resume();
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Menu Scene");
     }
 
     public void replay()
@@ -39,4 +39,5 @@ public class GameOverController : MonoBehaviour
         resume();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 }
