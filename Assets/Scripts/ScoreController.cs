@@ -20,7 +20,7 @@ public class ScoreController : MonoBehaviour
         foreach (int Paddle in Paddle.GetValues(typeof(Paddle)))
         {
             //Debug.Log(Paddle);
-            score[Paddle].text = "Player " + (Paddle+1) + "\n" + manager.score[Paddle].ToString();
+            score[Paddle].text = "Player " + (Paddle+1) + "\n" + manager.kebobolan[Paddle].ToString();
         }
     }
 }
