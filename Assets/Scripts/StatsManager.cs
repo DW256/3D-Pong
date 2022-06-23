@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class StatsManager : MonoBehaviour
 {
-    public int[] score = { 0, 0, 0, 0 };
+    //public int[] score = { 0, 0, 0, 0 };
     public int[] kebobolan = { 0, 0, 0, 0 };
     private GameObject[] paddles;
     private string winner;
@@ -19,11 +19,11 @@ public class StatsManager : MonoBehaviour
         winner = "Player ";
     }
 
-    public void addScore(Paddle lastPaddle)
-    {
-        score[(int)lastPaddle] += 1;
+    //public void addScore(Paddle lastPaddle)
+    //{
+    //    score[(int)lastPaddle] += 1;
 
-    }
+    //}
 
     public void addKebobolan(Paddle paddle)
     {

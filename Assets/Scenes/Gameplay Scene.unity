@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: a3d273e94540c9d4280d2316d5809bfa, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 45800f166693e9b41946ea3df843c28d, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -243,8 +243,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 3, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!23 &32702420
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -264,7 +264,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 310e236c753916d4eb406bf05411f863, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleName: 0
-  speed: 12
+  speed: 15
   key1: 276
   key2: 275
 --- !u!1 &212573019
@@ -1691,7 +1691,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1046590885}
         m_TargetAssemblyTypeName: GameOverController, Assembly-CSharp
         m_MethodName: replay
         m_Mode: 1
@@ -2128,8 +2128,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 3, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!23 &576702684
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2149,7 +2149,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 310e236c753916d4eb406bf05411f863, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2259,7 +2259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleName: 2
-  speed: 12
+  speed: 15
   key1: 119
   key2: 115
 --- !u!65 &642032496
@@ -2577,7 +2577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleName: 1
-  speed: 12
+  speed: 15
   key1: 97
   key2: 100
 --- !u!65 &725968844
@@ -3050,7 +3050,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad98a51603f086744baf50e5122fb36e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 00000000000000000000000000000000
   kebobolan: 00000000000000000000000000000000
   GameOver: {fileID: 1046590885}
 --- !u!1 &1202750787
@@ -3407,7 +3406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleName: 3
-  speed: 12
+  speed: 15
   key1: 273
   key2: 274
 --- !u!65 &1277021776
@@ -3517,8 +3516,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 3, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!23 &1313683300
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3538,7 +3537,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 310e236c753916d4eb406bf05411f863, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4194,8 +4193,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 3, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!23 &1956077517
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4215,7 +4214,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 310e236c753916d4eb406bf05411f863, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4344,7 +4343,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1046590885}
         m_TargetAssemblyTypeName: GameOverController, Assembly-CSharp
         m_MethodName: backToMainMenu
         m_Mode: 1

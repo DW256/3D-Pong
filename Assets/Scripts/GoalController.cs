@@ -20,7 +20,7 @@ public class GoalController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ball")
         {
-            manager.addScore(collision.GetComponent<BallController>().lastPaddle);
+            //manager.addScore(collision.GetComponent<BallController>().lastPaddle);
             manager.addKebobolan(owner);
             //Debug.Log(owner);
             ballsManager.RemoveBall(collision.gameObject);
